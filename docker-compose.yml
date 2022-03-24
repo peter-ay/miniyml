@@ -26,29 +26,29 @@ services:
     <<: *minio-common
     hostname: minio1
     volumes:
-      - /home/sawc-minio/data1-1:/data1
-      - /home/sawc-minio/data1-2:/data2
+      - /app/docker/sawc-minio/data1-1:/data1
+      - /app/docker/sawc-minio/data1-2:/data2
 
   minio2:
     <<: *minio-common
     hostname: minio2
     volumes:
-      - /home/sawc-minio/data2-1:/data1
-      - /home/sawc-minio/data2-2:/data2
+      - /app/docker/sawc-minio/data2-1:/data1
+      - /app/docker/sawc-minio/data2-2:/data2
 
   minio3:
     <<: *minio-common
     hostname: minio3
     volumes:
-      - /home/sawc-minio/data3-1:/data1
-      - /home/sawc-minio/data3-2:/data2
+      - /app/docker/sawc-minio/data3-1:/data1
+      - /app/docker/sawc-minio/data3-2:/data2
 
   minio4:
     <<: *minio-common
     hostname: minio4
     volumes:
-      - /home/sawc-minio/data4-1:/data1
-      - /home/sawc-minio/data4-2:/data2
+      - /app/docker/sawc-minio/data4-1:/data1
+      - /app/docker/sawc-minio/data4-2:/data2
 
   nginx:
     image: nginx:1.19.2-alpine
